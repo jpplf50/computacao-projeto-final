@@ -19,8 +19,5 @@ Web App base em Django para website de Teoria da Computação
 5. Lance a aplicação no browser com o comando `python manage.py runserver`
 6. abra a pasta com o Pycharm, ou com o comando `pycharm .`
 
-### Passos para criar uma nóva página na aplicação
-1. no ficheiro `views.py` crie uma nova função que renderize a nova página
-2. na pasta `website\templates\website` crie uma página HTML correspondente para ser renderizada, extendendo o layout base (veja como é feito nas outras páginas)
-3. no ficheiro `website\urls.py` crie um novo `path` para o novo URL
-4. no ficheiro `layout.html` (que está na pasta `website\templates\website`) atualize o menu de navegação, inlcuindo um link para a nova página
+
+### A aplicação foi criada no âmbito de Teoria da Computação
