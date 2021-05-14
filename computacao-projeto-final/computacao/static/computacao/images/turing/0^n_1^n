@@ -1,0 +1,19 @@
+digraph "numero igual de 0 e 1 mesma ordem" {
+	graph [rankdir=LR]
+	node [shape=circle]
+	edge [arrowhead=vee arrowsize=1]
+	Start [label="" shape=none]
+	B
+	D
+	A
+	C
+	H [shape=doublecircle]
+	Start -> A
+	A -> B [label="0dR"]
+	A -> H [label=ddS]
+	B -> B [label="00R,11R"]
+	B -> C [label=ddL]
+	C -> D [label="1dL"]
+	D -> D [label="00L,11L"]
+	D -> A [label=ddR]
+}

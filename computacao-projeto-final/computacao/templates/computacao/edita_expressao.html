@@ -1,0 +1,24 @@
+{% extends 'computacao/layout.html' %}
+
+{% block main %}
+
+<main class="col-sm-12">
+        <h3>Expressão Regular</h3>
+        <p>Pode aqui especificar uma nova expressão regular que ficará pronta a ser usada.</p>
+
+        <form class="form-group" action="{% url 'computacao:edita_expressao' expressao_id %}" method="POST">
+
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <div class="text-right">
+                <a href="{% url 'computacao:expressoes' %}" role="button" class="btn btn-warning">Cancelar</a>
+                <input type="submit" class="btn btn-success" value="submeter">
+            </div>
+
+        </form>
+
+    </main>
+
+{% endblock main %}
